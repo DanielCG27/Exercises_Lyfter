@@ -1,6 +1,7 @@
 class BankAccount:
 
-    balance = 0
+    def __init__(self, balance=0):
+        self.balance = balance
 
     def add_balance(self, amount):
         self.balance += amount
@@ -15,7 +16,7 @@ class BankAccount:
 class SavingsAccount(BankAccount):
     
     def __init__(self, balance, min_balance):
-        self.balance = balance
+        super().__init__(balance)
         self.min_balance = min_balance
 
     def subtract_balance(self, amount):
