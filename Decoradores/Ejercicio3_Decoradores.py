@@ -15,7 +15,7 @@ class User:
             self.date_of_birth.month, 
             self.date_of_birth.day
         ):
-            age =- 1
+            age -= 1
         return age
     
 def validate_adult(func):
@@ -23,7 +23,7 @@ def validate_adult(func):
         if user.age < 18:
             raise ValueError("User must be at least 18 years old")
         
-        return func(user)
+        return func(user, *args, **kwargs)
     
     return wrapper
 
@@ -31,6 +31,6 @@ def validate_adult(func):
 def create_bank_account(user):
     return f"Bank account created for {user.name}"
 
-user = User("Daniel", date(2015, 4, 27))
+user = User("Daniel", date(2000, 4, 27))
 
 print(create_bank_account(user))
