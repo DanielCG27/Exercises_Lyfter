@@ -1,6 +1,7 @@
 user_logged_in = True
 
 
+
 def requires_login(func):
     def wrapper(*args, **kwargs):
 
@@ -18,3 +19,11 @@ def view_profile():
 
 
 view_profile()
+
+
+user_logged_in = False
+
+try:
+    view_profile()
+except PermissionError as e:
+    print(f"Error: {e}")
