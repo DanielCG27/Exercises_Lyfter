@@ -66,8 +66,8 @@ my_double_ended_queue.print_structure()
 
 print("POP LEFT")
 my_double_ended_queue.pop_left()
-my_double_ended_queue.print_structure
+my_double_ended_queue.print_structure()
 
 print("POP RIGHT")
 my_double_ended_queue.pop_right()
-my_double_ended_queue.print_structure
+my_double_ended_queue.print_structure()
