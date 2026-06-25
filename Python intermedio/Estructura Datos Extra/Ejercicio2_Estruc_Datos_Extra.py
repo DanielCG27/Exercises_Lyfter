@@ -1,13 +1,13 @@
 # Clase que representa un nodo de la lista enlazada
 class Node:
-    def _init_(self, data):
+    def __init__(self, data):
         self.data = data      # Guarda el valor del nodo
         self.next = None      # Apunta al siguiente nodo (al inicio no apunta a ninguno)
 
 
 # Clase que representa la lista enlazada
 class LinkedList:
-    def _init_(self):
+    def __init__(self):
         self.head = None      # Guarda el primer nodo de la lista
 
     # Método para insertar un nodo al inicio

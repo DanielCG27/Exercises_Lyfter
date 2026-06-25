@@ -1,13 +1,13 @@
 # Clase que representa un nodo de la cola
 class Node:
-    def _init_(self, data):
+    def __init__(self, data):
         self.data = data      # Guarda el valor del nodo
         self.next = None      # Apunta al siguiente nodo (al inicio no hay ninguno)
 
 
 # Clase que representa la cola (Queue)
 class Queue:
-    def _init_(self):
+    def __init__(self):
         self.front = None     # Guarda el primer nodo de la cola
         self.rear = None      # Guarda el último nodo de la cola
 

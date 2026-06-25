@@ -1,6 +1,6 @@
 # Clase que representa un nodo de una lista doblemente enlazada
 class Node:
-    def _init_(self, data):
+    def __init__(self, data):
         self.data = data      # Guarda el valor del nodo
         self.next = None      # Apunta al siguiente nodo
         self.prev = None      # Apunta al nodo anterior
@@ -8,7 +8,7 @@ class Node:
 
 # Clase que representa la lista doblemente enlazada
 class DoublyLinkedList:
-    def _init_(self):
+    def __init__(self):
         self.head = None      # Primer nodo de la lista
         self.tail = None      # Último nodo de la lista
 
