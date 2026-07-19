@@ -65,7 +65,7 @@ class Queue:
 
 
 first_node = Node(48)
-second_node = Node("Daniel")
+second_node = Node(19)
 third_node = Node(12)
 
 first_node.next = second_node
@@ -76,4 +76,3 @@ my_queue = Queue(first_node)
 my_queue.validate_bubble_sort()
 
 my_queue.print_structure()
-
