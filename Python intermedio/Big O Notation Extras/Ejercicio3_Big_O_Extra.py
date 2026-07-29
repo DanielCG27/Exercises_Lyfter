@@ -11,6 +11,6 @@ def print_all_pairs(my_dict):
 
 #Complejidad temporal: O(n²), porque tiene dos ciclos anidados que recorren todas las claves 
 # del diccionario.
-#Con 1 millón de claves, ejecutaría aproximadamente 1 billón (10) 
+#Con 1 millón de claves, ejecutaría aproximadamente 1 billón (10¹²) 
 # de iteraciones, por lo que su ejecución sería extremadamente lenta 
 # y no sería una solución eficiente para un conjunto de datos tan grande.

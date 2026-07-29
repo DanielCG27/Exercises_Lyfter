@@ -28,3 +28,4 @@
 #Cuando la lista está ordenada.
 #Cuando la lista es grande y se realizarán muchas búsquedas.
 #Es mucho más eficiente que la búsqueda lineal en listas grandes.
+#Si la lista no está ordenada el algoritmo deja de ser válido imprimiendo resultados incorrectos
