@@ -1,5 +1,5 @@
 def word(first_text):
-    first_text = "Programming"
+    
     reversed_word = ""
 
 
