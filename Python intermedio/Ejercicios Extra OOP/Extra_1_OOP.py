@@ -15,7 +15,7 @@ class Rectangle:
         return perimeter
     
 try:
-    rectangle = Rectangle(2, 5)
+    rectangle = Rectangle(-2, 5)
 
     print(f"The area is {rectangle.get_area()}")
     print(f"The perimeter is {rectangle.get_perimeter()}")
