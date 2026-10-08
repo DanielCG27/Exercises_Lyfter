@@ -15,7 +15,7 @@ def test_calculate_average_negative_numbers():
     assert celsius_to_fahrenheit(-5) == 23
 
 
-def celsius_to_fahrenheit_zero_numbers():
+def test_celsius_to_fahrenheit_zero_numbers():
     assert add_numbers(0, 0) == 0
     assert calculate_average(0, 0, 0) == 0
     assert celsius_to_fahrenheit(0) == 32

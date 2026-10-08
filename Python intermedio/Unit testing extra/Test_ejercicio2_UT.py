@@ -10,7 +10,7 @@ def test_divide_positive_numbers():
 
     #Act
 
-    result = number1 / number2
+    result = divide(number1, number2)
 
     #Assert
     assert result == 5
