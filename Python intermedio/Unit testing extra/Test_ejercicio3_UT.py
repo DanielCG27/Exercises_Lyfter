@@ -1,0 +1,29 @@
+import pytest
+
+from Ejercicio3_UT_test import read_lines
+
+from unittest.mock import mock_open, patch
+
+def test_read_lines():
+    #Arrange
+
+    expected_lines = ["Hello\n", "world\n", "python\n"]
+    mock_file = mock_open(read_data= "Hello\nworld\npython\n")
+
+    #Act
+    with patch("Ejercicio3_UT_test.open", mock_file) as f:
+        result = read_lines("test.txt")
+
+    #Assert
+    assert expected_lines == result
+
+
+def test_read_lines_file_not_found():
+    # Arrange
+    mock_file = mock_open()
+    mock_file.side_effect = FileNotFoundError
+
+    # Act
+    with pytest.raises(FileNotFoundError):
+        with patch("Ejercicio3_UT_test.open", mock_file):
+            read_lines("test.txt")
